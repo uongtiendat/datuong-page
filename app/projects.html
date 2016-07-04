@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="../js/angular.min.js" type="text/javascript"></script>
+<script src="../js/imageLoader.js" type="text/javascript"></script>
+<script src="../js/ngDialog.js" type="text/javascript"></script>
+<link  href="../css/project-style.css" type="text/css" rel="stylesheet" />
+<link href="../css/ngDialog.css" type="text/css" rel="stylesheet" />
+<link href="../css/ngDialog-theme-default.css" type="text/css" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+        	<div class="logo"><a href="index.html">Dat Uong</a></div>
+            <div class="search-bar">
+            	<input type="text" name="searchbar" id="searchbar" placeholder="Search . . ."/>
+            </div>
+            <div class="menu">
+            	<a href="blog.html">Blog</a>
+                <a href="projects.html" style="color:#3897f0">Projects</a>
+            </div>
+        </div>
+        <div class="main-content" ng-app="popupDetail" ng-controller="popupCtrl">
+        	<div class="container">
+        		<div class="panel" ng-repeat="i in works">
+                	<div class="panel-inside" style="background-image:url(../res/uploads/{{ i.image }})" ng-click="clickToOpen(i.id)">{{ i.id }}
+                    </div>
+                </div>
+                <!--<div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>
+                <div class="panel" style="background-image:url(../res/Desert.jpg)"></div>-->
+            </div>
+        </div>
+        <div class="footer">
+        	<div class="footer-content"></div>
+        </div>
+	</div>
+</body>
+</html>

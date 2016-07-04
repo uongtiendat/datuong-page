@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family:alisandra;
+	src: url(../font/Alisandra.ttf);
+}
+
+@font-face {
+	font-family:gloria;
+	src: url(../font/Gloria.ttf);
+}
+
+@font-face {
+	font-family:variane;
+	src: url(../font/Variane.ttf);
+}
+
+body {
+	width:100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*--------------------------WRAPPER-------------------------*/
+
+.wrapper {
+	width:100%;
+	height:100%;	
+	top:0;
+	left:0;
+	position:absolute;
+}
+
+/*--------------------------HEADER--------------------------*/
+
+.header {
+	width:100%;
+	height:60px;
+	position:fixed;
+	background:#FFF;
+	border-bottom:#CCC solid 0.5px;
+}
+	
+	.header .logo {
+		float:left;
+		width:20%;
+		height:100%;
+		font-family: variane;
+		font-size:5vh;
+		text-align:right;
+		line-height:10vh;
+		color:#3897f0;
+	}
+	
+	.header .search-bar {
+		float:left;
+		width:40%;
+		height:100%;
+	}
+	
+		.header .search-bar #searchbar {
+			margin-top:10px;
+			margin-left:60px;
+			padding-left:10px;
+			width:50%;
+			height:50%;
+			border:0.5px solid #CCC;
+			border-radius:4px;	
+		}
+	
+	.header .menu {
+		float:left;
+		width:40%;
+		height:100%;
+	}
+	
+	.header .menu a {
+		text-decoration:none;
+		color:#003569	;
+		margin-left:20px;
+		line-height:10vh;
+	}
+	
+	.header .menu a:hover {
+		color:#3897f0;
+	}
+	
+/*---------------------------MAIN---------------------------*/
+
+.main-content {
+	width:100%;
+	min-height:75%;
+	padding-top:60px;
+}
+	
+	.main-content .container {
+		margin:auto;
+		padding-top:100px;
+		width:70%;
+	}
+	
+		.main-content .container .panel {
+			width:42vh;
+			height:42vh;
+			float:left;
+			margin:20px;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		
+		.main-content .container .left {
+			float:left;
+			width:200px;
+			height:200px;
+			background:#009;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			border-radius:180px 180px;
+		}
+		
+		.main-content .container .right {
+			float:left;
+			margin-left:50px;
+			width:500px;
+			height:200px;
+			border-left:#CCC solid 0.5px;
+			padding:10px;
+		}
+	
+/*--------------------------FOOTER--------------------------*/
+
+.footer {
+	width:100%;
+	height:10%;
+}
+
+	.footer-content {
+		min-height:50px;	
+	}
